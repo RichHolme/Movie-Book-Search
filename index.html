@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Book Search</title>
+	
+	<!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+	<!--google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Amatic+SC|BenchNine:300|Cormorant+Garamond|Fanwood+Text|Fjalla+One|Jaldi|Josefin+Slab|Julius+Sans+One|Lilita+One|Marcellus+SC|Quicksand|Sigmar+One|Vast+Shadow" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+		
+		<!--Header-->
+		<div id="row">
+			<!-- <div id="header">
+				<div class="col-md-8"></div>
+			</div> -->
+
+			<img class="img img-responsive" id="headerImg" height="100px" src="assets/images/zzzheader.png">
+		</div>
+
+		<!--Links below the Header -->
+				<div id="links">
+					<span id="row">
+						<span class="col-md-8">
+							<span id="useful">Useful Links: &nbsp;</span>
+							<span id="googleBooks"><a class="webLinks" href="https://books.google.com" target="_blank">Google Books &nbsp;</a></span>
+    						<span id="amazon"><a class="webLinks" href="https://www.amazon.com" target="_blank">Amazon &nbsp;</a></span>
+   							<span id="cliffsnotes"><a class="webLinks" href="https://www.cliffsnotes.com/literature" target="_blank">CliffsNotes&nbsp;</a></span>
+   							<span id="sparknotes"><a class="webLinks" href="https://www.sparknotes.com" target="_blank">SparkNotes</a></span>
+  						</span>
+					</span>
+				</div>
+		
+		<!-- <nav class="navbar navbar-light bg-light">
+  			<a class="navbar-brand" href="#">
+    		<img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    		Bootstrap
+  			</a>
+		</nav> -->
+
+		<div id="row">
+        	<div class="col-md-4">
+            	<div class="form-group" id="searchBox">
+                	<label for="search">Search for a book:</label>
+                	<input type="text" class="form-control" id="bookSearch">
+
+                	<label for="search">Search author:</label>
+                	<input type="text" class="form-control" id="authorSearch">
+
+                	<button type="button" class="btn btn-default" id="search">Search</button>
+            	</div>
+
+            	<div id="memeHolder" class="col-md-12">
+            		<div id="img-holder">
+            			<img id="memes" class="" height="200px" width="250px" src="assets/images/charlotte.jpg"">
+            		</div>
+        		</div>
+
+        	</div>
+
+			<div id="book" class="col-md-8" align="center">
+
+					<div id="bookTitle"></div>
+					
+					<div id="bookPoster"></div>
+			
+				</div>
+				
+			</div>
+
+			<div id="myBook" class="col-md-8">
+				<div id="myTitle"></div>
+				<div id="picFind" class="col-md-4">
+					<div id="myPoster">
+					</div>
+
+					<div id="find"></div>
+					
+				</div>
+
+				<div id="bookInfo" class="col-md-8">
+						
+					<div class="col-md-12">
+						<div id="author"></div><br>
+						<div id="category"></div>
+						<div id="publish"></div>
+						<div id="pages"></div><br>
+						<div id="description"></div>
+
+						<div id="poll">
+            				<form id="radioPoll">
+            					<label>Would you read this book?</label><br>
+               					<input type="radio" name="poll" value="yes" class="yes" > Yes &nbsp;
+               					<input type="radio" name="poll" value="no" class="no"> No &nbsp;
+               					<input type="radio" name="poll" value="maybe" class="maybe"> Maybe &nbsp;
+             				</form>
+             				<div class="vote"><span class="glyphicon glyphicon-thumbs-up"><span id="yes">0</span></span><span class="glyphicon glyphicon-thumbs-down"><span id="no">0</span></span><span class="glyphicon glyphicon-question-sign"><span id="maybe">0</span></span></div>
+            		
+            			</div>
+
+            	    </div>
+				</div>
+			</div>
+
+			<div id="myMovie" class="col-md-8">
+				<div id="movieTitle"></div>
+				<div id="moviePoster" class="col-md-4"></div>
+				
+				<div id="movieInfo" class="col-md-8">
+					<div class="col-md-12">
+						<div id="movie"><strong><h4 style="font-family:verdana;">Description:</strong></h4></div>
+						<div id="descriptionMovie"></div><br>
+						<div id="infoTitle"><strong><h4 style="font-family:verdana;">Movie Info:</strong></h4></div>
+						<span id="director"><strong>Director:</strong>&nbsp;</span>
+						<span id="release"><strong>Release:&nbsp;</strong></span>
+						<span id="rating"><strong>Rating:&nbsp;</strong></span>
+						<span id="runtime"><strong>Runtime:&nbsp;</strong></span><br>
+						<span id="actors"><strong>Actors:&nbsp;</strong></span><br>
+						<span id="awards"><strong>Awards:&nbsp;</strong></span><br><br><br><br>
+					</div>
+				
+				</div>
+
+				<div id="trailer" class="col-md-12">
+					
+					
+					<h4 align="left" style="font-family:Verdana;"><strong>Check Out The Trailer:&nbsp;</strong></h4>
+					<div id="iframe" class="videoWrapper"></div>
+
+
+				</div>		
+						
+				
+					
+
+			</div>
+			
+    	</div>
+    	</div>
+	</div>
+
+</body>
+
+</html>
