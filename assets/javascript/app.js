@@ -242,85 +242,85 @@ $(document).ready(function() {
 
       }
 
-      $("#1").hover(function(){
-        $("#1").addClass('animated swing');
-      });
+      // $("#1").hover(function(){
+      //   $("#1").addClass('animated swing');
+      // });
 
-      $("#1").mouseleave(function(){
-        $("#1").removeClass('animated swing');
-      });
+      // $("#1").mouseleave(function(){
+      //   $("#1").removeClass('animated swing');
+      // });
 
-      $("#2").hover(function(){
-        $("#2").addClass('animated swing');
-      });
+      // $("#2").hover(function(){
+      //   $("#2").addClass('animated swing');
+      // });
 
-      $("#2").mouseleave(function(){
-        $("#2").removeClass('animated swing');
-      });
+      // $("#2").mouseleave(function(){
+      //   $("#2").removeClass('animated swing');
+      // });
 
-      $("#3").hover(function(){
-        $("#3").addClass('animated swing');
-      });
+      // $("#3").hover(function(){
+      //   $("#3").addClass('animated swing');
+      // });
 
-      $("#3").mouseleave(function(){
-        $("#3").removeClass('animated swing');
-      });
+      // $("#3").mouseleave(function(){
+      //   $("#3").removeClass('animated swing');
+      // });
 
-      $("#4").hover(function(){
-        $("#4").addClass('animated swing');
-      });
+      // $("#4").hover(function(){
+      //   $("#4").addClass('animated swing');
+      // });
 
-      $("#4").mouseleave(function(){
-        $("#4").removeClass('animated swing');
-      });
+      // $("#4").mouseleave(function(){
+      //   $("#4").removeClass('animated swing');
+      // });
 
-      $("#5").hover(function(){
-        $("#5").addClass('animated swing');
-      });
+      // $("#5").hover(function(){
+      //   $("#5").addClass('animated swing');
+      // });
 
-      $("#5").mouseleave(function(){
-        $("#5").removeClass('animated swing');
-      });
+      // $("#5").mouseleave(function(){
+      //   $("#5").removeClass('animated swing');
+      // });
 
-      $("#6").hover(function(){
-        $("#6").addClass('animated swing');
-      });
+      // $("#6").hover(function(){
+      //   $("#6").addClass('animated swing');
+      // });
 
-      $("#6").mouseleave(function(){
-        $("#6").removeClass('animated swing');
-      });
+      // $("#6").mouseleave(function(){
+      //   $("#6").removeClass('animated swing');
+      // });
 
-      $("#7").hover(function(){
-        $("#7").addClass('animated swing');
-      });
+      // $("#7").hover(function(){
+      //   $("#7").addClass('animated swing');
+      // });
 
-      $("#7").mouseleave(function(){
-        $("#7").removeClass('animated swing');
-      });
+      // $("#7").mouseleave(function(){
+      //   $("#7").removeClass('animated swing');
+      // });
 
-      $("#8").hover(function(){
-        $("#8").addClass('animated swing');
-      });
+      // $("#8").hover(function(){
+      //   $("#8").addClass('animated swing');
+      // });
 
-      $("#8").mouseleave(function(){
-        $("#8").removeClass('animated swing');
-      });
+      // $("#8").mouseleave(function(){
+      //   $("#8").removeClass('animated swing');
+      // });
 
-      $("#9").hover(function(){
-        $("#9").addClass('animated swing');
-      });
+      // $("#9").hover(function(){
+      //   $("#9").addClass('animated swing');
+      // });
 
-      $("#9").mouseleave(function(){
-        $("#9").removeClass('animated swing');
-      });
+      // $("#9").mouseleave(function(){
+      //   $("#9").removeClass('animated swing');
+      // });
 
-      $("#0").hover(function(){
-        $("#0").addClass('animated swing');
-      });
+      // $("#0").hover(function(){
+      //   $("#0").addClass('animated swing');
+      // });
 
-      $("#0").mouseleave(function(){
-        $("#0").removeClass('animated swing');
-      });
+      // $("#0").mouseleave(function(){
+      //   $("#0").removeClass('animated swing');
+      // });
 
       // when user clicks result image
   		$("img").on('click', function(event){
