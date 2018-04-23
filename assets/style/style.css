@@ -291,8 +291,12 @@ label{
 }
 
 #headerImg{
-	height: 300px;
+	height: 250px;
 	width: 100%;
+}
+
+#searchAgain{
+	float: right;
 }
 
 @media only screen and (max-width: 360px){

@@ -9,6 +9,7 @@ $(document).ready(function() {
   //   });
     
 	// for tmdb
+  // $("#searchAgain").hide();
 	$("#gotMovie").hide();
 	$("#book").hide();
 	$("#yourBook").hide();
@@ -78,12 +79,20 @@ $(document).ready(function() {
 
   // fill random search
   // bookSearch('','dr.seuss')
+  function searchAgain(){
+    $("#searchBox").show();
+    $("#searchAgain").hide();
+  }
 
+  $(document).on('click','#searchAgain', function(event){
+    searchAgain();
+  });
   // when user clicks search for book
 	$(document).on('click','#search', function(event){
 
 		event.preventDefault();
 
+    $("#searchBox").hide();
     // grab book value
 		var book = $("#bookSearch").val().trim();
 
@@ -129,9 +138,10 @@ $(document).ready(function() {
 
     // call bookSearch with book and author
 		bookSearch(book, author);
-
-    $("#bookTitle").text('We Found Some Books! Click On The One Your Looking For.');
-		
+    var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
+    searchAgain.append('Search Again?');
+    $("#bookTitle").text('We Found Some Books! Click On The One Your Looking For. ');
+		$("#bookTitle").append(searchAgain);
 	})
 	
   var runs = 0;
@@ -231,7 +241,7 @@ $(document).ready(function() {
 
           // show results
           // if(runs > 1){
-            $("#bookTitle").text('We Found Some Books! Click On The One Your Looking For.');
+            // $("#bookTitle").text('We Found Some Books! Click On The One Your Looking For.');
             $("#book").show();
           // }else{
             // $("#bookTitle").text('Check out this random search!');
