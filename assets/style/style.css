@@ -214,23 +214,23 @@ label{
 }
 
 #movieButton{
-	margin: 10px !important;
+	margin: 10px 0px 0px 40px !important;
 	/*background-color: lightblue !important;*/
 	padding-right: 20px !important;
 	padding-left: 20px !important;
-	background-color:  #ffd11a;
+	/*background-color:  #ffd11a;*/
 }
 
-#movieButton:hover {
+/*#movieButton:hover {
 	background-color:  gold;
-	margin: 10px !important;
-	/*background-color: lightblue !important;*/
+	margin: 10px 0px 0px 40px !important;
+	background-color: lightblue !important;
 	padding-right: 20px !important;
 	padding-left: 20px !important;
-	border: 2px solid orange;
+	border: 1px solid #555;
 	
 }
-
+*/
 #trailer{
 	font-size: 25px;
 	text-align: center;
