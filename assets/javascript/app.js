@@ -82,6 +82,11 @@ $(document).ready(function() {
   function searchAgain(){
     $("#searchBox").show();
     $("#searchAgain").hide();
+    $("#infoBody").hide();
+    $("#book").hide();
+    $("#myBook").hide();
+    $("#myMovie").hide();
+
   }
 
   $(document).on('click','#searchAgain', function(event){
@@ -92,6 +97,7 @@ $(document).ready(function() {
 
 		event.preventDefault();
 
+    $("#infoBody").show();
     $("#searchBox").hide();
     // grab book value
 		var book = $("#bookSearch").val().trim();
@@ -142,6 +148,7 @@ $(document).ready(function() {
     searchAgain.append('Search Again?');
     $("#bookTitle").text('We Found Some Books! Click On The One Your Looking For. ');
 		$("#bookTitle").append(searchAgain);
+    
 	})
 	
   var runs = 0;
@@ -425,8 +432,12 @@ $(document).ready(function() {
         // show info
         $("#bookInfo").show();
 
+        var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
+        searchAgain.append('Search Again?');
+
         // append all info
         $("#myTitle").append(titleText);
+        $("#myTitle").append(searchAgain);
         $("#author").append(authorText);
         $("#description").append(descriptionText);
         $("#category").append(categoryText);
@@ -595,8 +606,12 @@ $(document).ready(function() {
       // append movie poster
       $("#moviePoster").append("<img id=myImg src='" + image +"'>");
 
+      var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
+      searchAgain.append('Search Again?');
+
       // append all new info
       $("#movieTitle").append(titleText);
+      $("#movieTitle").append(searchAgain);
       $("#director").append(directorText);
       $("#release").append(releaseText);
       $("#runtime").append(runtimeText);
