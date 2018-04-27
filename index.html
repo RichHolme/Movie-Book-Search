@@ -20,6 +20,9 @@
 	<!--google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Amatic+SC|BenchNine:300|Cormorant+Garamond|Fanwood+Text|Fjalla+One|Jaldi|Josefin+Slab|Julius+Sans+One|Lilita+One|Marcellus+SC|Quicksand|Sigmar+One|Vast+Shadow" rel="stylesheet">
 
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 	<div class="container">
@@ -32,15 +35,42 @@
 
 			<img class="img img-responsive" id="headerImg" src="assets/images/reading2.jpg">
 
-			<div class="form-group" id="searchBox">
-                <label for="search">Search for a book:</label>
-                <input type="text" class="form-control" id="bookSearch">
+			<!-- <div id="links">
+					<span id="row">
+						<span class="col-md-8">
+							<span id="googleBooks"><a class="webLinks" href="https://books.google.com" target="_blank">Google Books &nbsp;</a></span>
+    						<span id="amazon"><a class="webLinks" href="https://www.amazon.com" target="_blank">Amazon &nbsp;</a></span>
+   							<span id="cliffsnotes"><a class="webLinks" href="https://www.cliffsnotes.com/literature" target="_blank">CliffsNotes&nbsp;</a></span>
+   							<span id="sparknotes"><a class="webLinks" href="https://www.sparknotes.com" target="_blank">SparkNotes</a></span>
+  						</span>
+					</span>
+				</div>
+			</div> -->
 
-                <label for="search">Search author:</label>
-                <input type="text" class="form-control" id="authorSearch">
+			<!-- <div class="form-group" id="searchBox"> -->
+				<!-- <div class="input-group"> -->
+	                <!-- <label for="search">Search for a book:</label> -->
+	                <!-- <span> -->
+	                <!-- <div class="container-1">
+	                	 <input type="text" class="form-control" id="bookSearch">
+	                <span class="icon"><i class="fa fa-search"></i></span>
+	                </div> -->
+	               
+	                <!-- <span> -->
+	                    <!-- <button type="button" class="btn btn-default" id="search">Search</button> -->
+	                <!-- </span> -->
+	            <!-- </div> -->
+            <!-- </div>  -->
 
-                <button type="button" class="btn btn-default" id="search">Search</button>
-            </div>
+            <div class="box" id="searchBox">
+			  <div class="container-1">
+			  	<label for="search">Search for a book:</label>
+			      
+			      <input type="search" id="search" placeholder="Search..." />
+			      <span class="icon"><i class="fa fa-search"></i></span>
+			  </div>
+			</div>
+
 		</div>
 
 		<!--Links below the Header -->

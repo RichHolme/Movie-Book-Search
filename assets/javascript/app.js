@@ -106,7 +106,7 @@ $(document).ready(function() {
 		var author = $("#authorSearch").val().trim();
 
     // replaces first letter of each word in book to uppercase
-		book = book.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+		// book = book.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 
     //  empty out search values
 		$("#bookSearch").val('');
@@ -158,7 +158,7 @@ $(document).ready(function() {
 
 		var authKey = "AIzaSyD3t9FZQ_rFOQdwV_b3PVvH6FEWSNJjRck";
 
-  	var queryURL = "https://www.googleapis.com/books/v1/volumes?q=" + book + "+inauthor:" + author + "&key=" + authKey;
+  	var queryURL = "https://www.googleapis.com/books/v1/volumes?q=" + book + "&key=" + authKey;
 
     // query google books
   	$.ajax({
