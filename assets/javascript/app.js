@@ -44,35 +44,35 @@ $(document).ready(function() {
   })
 
   // array of memes
-  var memes = ["./assets/images/baby.jpg", "./assets/images/charlotte.jpg", "./assets/images/shakespeare1.jpg", 
-              "./assets/images/mockingbird.jpg", "./assets/images/mobydick.jpg", "./assets/images/sideways.jpg", 
-              "./assets/images/snowwhite.jpg", "./assets/images/twain.jpg", "./assets/images/bookclub.jpg", 
-              "./assets/images/cat.jpg", "./assets/images/lisa.jpg", 
-              "./assets/images/man.jpg", "./assets/images/red.jpg"];
+  // var memes = ["./assets/images/baby.jpg", "./assets/images/charlotte.jpg", "./assets/images/shakespeare1.jpg", 
+  //             "./assets/images/mockingbird.jpg", "./assets/images/mobydick.jpg", "./assets/images/sideways.jpg", 
+  //             "./assets/images/snowwhite.jpg", "./assets/images/twain.jpg", "./assets/images/bookclub.jpg", 
+  //             "./assets/images/cat.jpg", "./assets/images/lisa.jpg", 
+  //             "./assets/images/man.jpg", "./assets/images/red.jpg"];
 
   // var count = 0;
 
-  nextImage();
+  // nextImage();
 
-  // function to dispaly images
-  function displayImage(){
-    $("#memes").attr('src', memes[count]);
+  // // function to dispaly images
+  // function displayImage(){
+  //   $("#memes").attr('src', memes[count]);
 
-    //insert a random generator for count
-    count = Math.floor(Math.random() * memes.length);
-  }
+  //   //insert a random generator for count
+  //   count = Math.floor(Math.random() * memes.length);
+  // }
 
-  // function to update image every 6 seconds 
-  function nextImage() {
+  // // function to update image every 6 seconds 
+  // function nextImage() {
 
-    // call displayImage every 6 seconds
-    setInterval(displayImage, 6000);
+  //   // call displayImage every 6 seconds
+  //   setInterval(displayImage, 6000);
 
-    if (count >= memes.length) {
-      count = 0;
+  //   if (count >= memes.length) {
+  //     count = 0;
            
-    }
-  }
+  //   }
+  // }
 
   // set url to empty string
 	var yotubeURL = '';
@@ -103,7 +103,7 @@ $(document).ready(function() {
 		var book = $("#bookSearch").val().trim();
 
     // grab autor vlaue
-		var author = $("#authorSearch").val().trim();
+		// var author = $("#authorSearch").val().trim();
 
     // replaces first letter of each word in book to uppercase
 		// book = book.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
@@ -145,8 +145,8 @@ $(document).ready(function() {
     // call bookSearch with book and author
 		bookSearch(book, author);
     var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
-    searchAgain.append('Search Again?');
-    $("#bookTitle").text('We Found Some Books! Click On The One Your Looking For. ');
+    searchAgain.append('Search Again');
+    $("#bookTitle").text('Results');
 		$("#bookTitle").append(searchAgain);
     
 	})
@@ -258,86 +258,6 @@ $(document).ready(function() {
   			}
 
       }
-
-      // $("#1").hover(function(){
-      //   $("#1").addClass('animated swing');
-      // });
-
-      // $("#1").mouseleave(function(){
-      //   $("#1").removeClass('animated swing');
-      // });
-
-      // $("#2").hover(function(){
-      //   $("#2").addClass('animated swing');
-      // });
-
-      // $("#2").mouseleave(function(){
-      //   $("#2").removeClass('animated swing');
-      // });
-
-      // $("#3").hover(function(){
-      //   $("#3").addClass('animated swing');
-      // });
-
-      // $("#3").mouseleave(function(){
-      //   $("#3").removeClass('animated swing');
-      // });
-
-      // $("#4").hover(function(){
-      //   $("#4").addClass('animated swing');
-      // });
-
-      // $("#4").mouseleave(function(){
-      //   $("#4").removeClass('animated swing');
-      // });
-
-      // $("#5").hover(function(){
-      //   $("#5").addClass('animated swing');
-      // });
-
-      // $("#5").mouseleave(function(){
-      //   $("#5").removeClass('animated swing');
-      // });
-
-      // $("#6").hover(function(){
-      //   $("#6").addClass('animated swing');
-      // });
-
-      // $("#6").mouseleave(function(){
-      //   $("#6").removeClass('animated swing');
-      // });
-
-      // $("#7").hover(function(){
-      //   $("#7").addClass('animated swing');
-      // });
-
-      // $("#7").mouseleave(function(){
-      //   $("#7").removeClass('animated swing');
-      // });
-
-      // $("#8").hover(function(){
-      //   $("#8").addClass('animated swing');
-      // });
-
-      // $("#8").mouseleave(function(){
-      //   $("#8").removeClass('animated swing');
-      // });
-
-      // $("#9").hover(function(){
-      //   $("#9").addClass('animated swing');
-      // });
-
-      // $("#9").mouseleave(function(){
-      //   $("#9").removeClass('animated swing');
-      // });
-
-      // $("#0").hover(function(){
-      //   $("#0").addClass('animated swing');
-      // });
-
-      // $("#0").mouseleave(function(){
-      //   $("#0").removeClass('animated swing');
-      // });
 
       // when user clicks result image
   		$("img").on('click', function(event){
