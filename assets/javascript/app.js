@@ -146,8 +146,8 @@ $(document).ready(function() {
 		bookSearch(book, author);
     var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
     searchAgain.append('Search Again');
-    $("#bookTitle").text('Results');
-		$("#bookTitle").append(searchAgain);
+    // $("#bookTitle").text('Results');
+		$("#bookTitle").prepend(searchAgain);
     
 	})
 	
