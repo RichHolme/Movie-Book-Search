@@ -165,7 +165,7 @@ label{
 #myImg{
 	float: left;
 	height: 280px;
-	width: 240px;
+	width: 215px;
 }
 
 /*.navbar{
@@ -315,6 +315,8 @@ label{
 
 #searchAgain{
 	float: right;
+	margin-top: -10px;
+	margin-right: 25px;
 }
 
 #links{

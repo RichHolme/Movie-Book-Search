@@ -145,7 +145,8 @@ $(document).ready(function() {
     // call bookSearch with book and author
 		bookSearch(book, author);
     var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
-    searchAgain.append('Search Again');
+    var tag = $("<i class='fa fa-search'>");
+    searchAgain.append(tag);
     // $("#bookTitle").text('Results');
 		$("#bookTitle").prepend(searchAgain);
     
@@ -353,7 +354,8 @@ $(document).ready(function() {
         $("#bookInfo").show();
 
         var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
-        searchAgain.append('Search Again?');
+        var tag = $("<i class='fa fa-search'>")
+        searchAgain.append(tag);
 
         // append all info
         $("#myTitle").append(titleText);
@@ -527,7 +529,8 @@ $(document).ready(function() {
       $("#moviePoster").append("<img id=myImg src='" + image +"'>");
 
       var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
-      searchAgain.append('Search Again?');
+      var tag = $("<i class='fa fa-search'>");
+      searchAgain.append(tag);
 
       // append all new info
       $("#movieTitle").append(titleText);
