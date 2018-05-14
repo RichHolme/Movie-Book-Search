@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-  $("body").addClass('animated bounce');
+  // $("body").addClass('animated bounce');
 
   // $("#search").click(function(){
   //       // $("#search").animate({height: "50px", width:"330px"});
@@ -158,11 +158,14 @@ $(document).ready(function() {
 
     // call bookSearch with book and author
 		bookSearch(book, author);
-    var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
+    var searchAgain = $("<button class='btn animate btn-default' id='searchAgain'>");
     var tag = $("<i class='fa fa-search'>");
     searchAgain.append(tag);
     // $("#bookTitle").text('Results');
 		$("#bookTitle").prepend(searchAgain);
+    // .hide().fadeIn(3000)
+    // $("#searchAgain").fadeIn(3000);
+
     
 	})
 	
@@ -370,6 +373,7 @@ $(document).ready(function() {
         var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
         var tag = $("<i class='fa fa-search'>")
         searchAgain.append(tag);
+        // $("#searchAgain").stop(true,true);
 
         // append all info
         $("#myTitle").append(titleText);
@@ -586,7 +590,7 @@ $(document).ready(function() {
    		  // console.log(key);
 
         // create when movie found
-        var movieButton = $("<button class='btn btn-default' id='movieButton'>");
+        var movieButton = $("<button class='btn animate btn-default' id='movieButton'>");
 
         // append button
         movieButton.append('We found a movie!');
