@@ -11,13 +11,25 @@
 	background-color: black;
 }*/
 body{
-	background-color: #ffc966;
+	background-color: #f7f7f7 !important;
 }
 
 #title{
 	text-align: center;
-	font-size: 50px;
+	font-size: 60px;
 	font-family: 'Marcellus SC', serif;
+	margin-top: 20px;
+	box-shadow: 5px 5px 8px 1px #888888;
+	/*border-radius: 10px;*/
+	background-color: white;
+}
+
+.titleImg{
+	margin-top: 20px;
+}
+
+.titleThink{
+	margin-bottom: 40px;
 }
 
 #book{
@@ -167,7 +179,7 @@ label{
 	/*padding-left: : 10px;
 	padding-right: 10px;*/
 	/*border-radius: 5%;*/
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 }
 
 #bookPoster{
@@ -255,9 +267,10 @@ label{
 	padding-right: 20px !important;
 	padding-left: 20px !important;
 	/*background-color:  #ffd11a;*/
-	background: lightgrey;
+	/*background: lightgrey;*/
 	/*padding:5px 10px;*/
 	/*color:white;*/
+
 }
 
 /*#movieButton:hover {
@@ -275,6 +288,10 @@ label{
 	text-align: center;
 	margin-top: 3vw;
 }
+
+/*#iframe{
+	text-align: center;
+}*/
 
 #memeHolder{
 	margin-top: 80px;
@@ -311,28 +328,30 @@ label{
 }
 
 .videoWrapper {
-	position: relative;
-	padding-bottom: 50%;  
+	/*position: relative;*/
+	text-align: center;
+	padding-bottom: 50px;  
 	/*padding-top: 25px;*/
 	/*height: 0;*/
 	/*border: 10px inset #ddd;*/
 }
 .videoWrapper iframe {
-	position: absolute;
+	/*position: absolute;
 	top: 0;
-	left: 0;
+	left: 0;*/
 	width: 70%;
-	height: 70%;
+	height: 400px;
 	/*border: 10px double #ddd;*/
 	/*box-shadow: 5px 10px 8px 3px #888888;*/
 	/*box-shadow: 3px 3px 5px 7px #888888;*/
 	border: solid 2px black;
+	box-shadow: 5px 10px 8px 3px #888888;
 }
 
-.border{
+/*.border{
 	border: solid 1px lightgray;
 
-}
+}*/
 
 #headerImg{
 	height: 250px;
@@ -343,10 +362,11 @@ label{
 	float: right;
 	margin-top: -10px;
 	margin-right: 25px;
-	background:lightgrey;
+	/*background:lightgrey;*/
 	/*padding:5px 10px;*/
 	/*color:white;*/
-	border:none;
+	/*border:none;*/
+	border: 1px solid lightgrey;
 	border-radius:5px;
 }
 
