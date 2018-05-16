@@ -80,6 +80,7 @@ $(document).ready(function() {
   // fill random search
   // bookSearch('','dr.seuss')
   function searchAgain(){
+    $("#bookTitle").empty();
     $("#searchBox").show();
     $("#searchAgain").hide();
     $("#infoBody").hide();
@@ -155,9 +156,17 @@ $(document).ready(function() {
     $("#descriptionMovie").empty();
 
 		// console.log(book);
-
-    // call bookSearch with book and author
-		bookSearch(book, author);
+    if(book === ''){
+      console.log('no entry');
+      $("#bookTitle").text("Please enter a book or author to search.");
+      $("#book").show();
+    }else{
+      // console.log(book);
+      // console.log('search called');
+      // call bookSearch with book and author
+      bookSearch(book, author);
+    }
+    
     var searchAgain = $("<button class='btn animate btn-default' id='searchAgain'>");
     var tag = $("<i class='fa fa-search'>");
     searchAgain.append(tag);
@@ -193,7 +202,12 @@ $(document).ready(function() {
       if(googleBook.totalItems == 0){
 
         // create text and show results
-        $("#bookTitle").text("Your search didn't return any results. Check your spelling and try again.")
+        $("#bookTitle").text("Your search didn't return any results. Check your spelling and try again.");
+        var searchAgain = $("<button class='btn animate btn-default' id='searchAgain'>");
+        var tag = $("<i class='fa fa-search'>");
+        searchAgain.append(tag);
+        // $("#bookTitle").text('Results');
+        $("#bookTitle").prepend(searchAgain);
         $("#book").show();
 
       }else{
