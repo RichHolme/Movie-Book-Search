@@ -21,15 +21,19 @@ body{
 	margin-top: 20px;
 	box-shadow: 5px 5px 8px 1px #888888;
 	/*border-radius: 10px;*/
-	background-color: white;
+	background: white;
 }
 
 .titleImg{
 	margin-top: 20px;
+	/*opacity: .8;*/
+	/*border-radius: 5px;*/
 }
 
 .titleThink{
 	margin-bottom: 40px;
+	/*opacity: .8;*/
+	/*border-radius: 5px;*/
 }
 
 #book{
@@ -270,7 +274,7 @@ label{
 	/*background: lightgrey;*/
 	/*padding:5px 10px;*/
 	/*color:white;*/
-
+	background: linear-gradient(#abbaab , #ffffff);
 }
 
 /*#movieButton:hover {
@@ -368,6 +372,7 @@ label{
 	/*border:none;*/
 	border: 1px solid lightgrey;
 	border-radius:5px;
+	background: linear-gradient(#abbaab , #ffffff);
 }
 
 .animate{
