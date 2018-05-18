@@ -142,7 +142,8 @@ body{
 	/*width: 10%;*/
 	/*float: left;*/
 	/*border-left: none;*/
-	background: linear-gradient(#abbaab , #ffffff);
+	/*background: linear-gradient(#abbaab , #ffffff);*/
+	/*box-shadow: 3px 3px 8px 1px #888888;*/
 }
 
 #searchBar{
@@ -278,7 +279,8 @@ label{
 	/*background: lightgrey;*/
 	/*padding:5px 10px;*/
 	/*color:white;*/
-	background: linear-gradient(#abbaab , #ffffff);
+	/*background: linear-gradient(#abbaab , #ffffff);*/
+	box-shadow: 3px 3px 8px 1px #888888;
 }
 
 /*#movieButton:hover {
@@ -376,7 +378,8 @@ label{
 	/*border:none;*/
 	border: 1px solid lightgrey;
 	border-radius:5px;
-	background: linear-gradient(#abbaab , #ffffff);
+	/*background: linear-gradient(#abbaab , #ffffff);*/
+	box-shadow: 3px 3px 8px 1px #888888;
 }
 
 .animate{
