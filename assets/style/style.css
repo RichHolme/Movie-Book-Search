@@ -189,6 +189,7 @@ label{
 	padding-right: 10px;*/
 	/*border-radius: 5%;*/
 	/*border-radius: 5px;*/
+	/*overflow-y: scroll;*/
 }
 
 #bookPoster{
@@ -407,10 +408,38 @@ label{
 	background-color: lightgrey;
 }
 
+/*.scroll-box {
+    overflow-y: scroll;
+    height: 100px;
+    padding: 1rem
+}
+*/
 @media only screen and (max-width: 360px){
-	.card{
-		margin-left: 60px;
+
+	#title{
+		font-size: 20px;
 	}
+
+	.titleImg{
+		display: none;
+	}
+
+	.titleThink{
+		display: none;
+	}
+	.card{
+		/*margin-left: 60px;*/
+		width: 110px !important;
+		height: 200px;
+		overflow-y: scroll;
+	}
+
+	.bookImage{
+		height: 150px;
+		width: 110px;
+	}
+
+	/*^for search page^*/
 
 	#myPoster{
 		margin-left: 45px;
