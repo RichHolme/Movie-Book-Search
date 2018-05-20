@@ -417,7 +417,9 @@ label{
 @media only screen and (max-width: 360px){
 
 	#title{
-		font-size: 20px;
+		font-size: 24px;
+		padding-top: 15px;
+		padding-bottom: 10px;
 	}
 
 	.titleImg{
@@ -439,6 +441,32 @@ label{
 		width: 110px;
 	}
 
+	#bookSearch{
+		font-size: 12px;
+		height: 28px;
+	}
+
+	#search{
+		height: 28px;
+	}
+
+	.fa.fa-search{
+		font-size: 13px;
+	}
+	
+	#searchBox i {
+    	display:block;
+    	text-align:center
+	}
+
+	#searchAgain{
+		height: 28px;
+	}
+
+	#bookTitle i {
+    	display:block;
+    	text-align:center
+	}
 	/*^for search page^*/
 
 	#myPoster{
