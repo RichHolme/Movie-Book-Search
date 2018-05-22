@@ -471,13 +471,46 @@ label{
 	
 	/* ^for search page^ */
 
-	#myPoster{
-		margin-left: 45px;
+	#myImg{
+		height: 200px;
+		width: 150px;
+	}
+	
+	#myTitle i {
+    	display:block;
+    	text-align:center;
+	}
+	
+	.book{
+		margin-top: 5px !important;
+		/*margin-left: 205px !important;*/
+	}
+
+	#myTitle{
+		margin-top: 10px;
+		font-size: 22px;
+	}
+
+	#movieButton {
+    	/*display:block;
+    	text-align:center;*/
+    	width: 140px;
+    	padding-left: 10px !important;
+    	margin-left: 5px !important;
+    	/*font-size: */
+    	/*float: left;*/
 	}
 
 	#bookInfo{
-		margin-left: 60px;
+		/*margin-left: 60px;*/
+		margin-left: -10px;
 		/*background-color: blue !important;*/
+		font-size: 14px;
+	}
+
+	#poll{
+		font-size: 14px;
+		margin-left: 10px !important;
 	}
 
 	#movieInfo{
@@ -499,10 +532,10 @@ label{
 		margin-left: 45px;
 	}
 
-	#movieButton{
+	/*#movieButton{
 		margin-left: 5px !important;
-		/*background-color: blue !important;*/
-	}
+		background-color: blue !important;
+	}*/
 
 	#poll{
 		margin-left: -30px;

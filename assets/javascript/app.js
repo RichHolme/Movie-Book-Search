@@ -384,13 +384,13 @@ $(document).ready(function() {
         // show info
         $("#bookInfo").show();
 
-        var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
+        var searchAgain = $("<button class='book btn btn-default' id='searchAgain'>");
         var tag = $("<i class='fa fa-search'>")
         searchAgain.append(tag);
         // $("#searchAgain").stop(true,true);
 
         // append all info
-        $("#myTitle").append(titleText);
+        $("#myTitle").prepend(titleText);
         $("#myTitle").append(searchAgain);
         $("#author").append(authorText);
         $("#description").append(descriptionText);
@@ -566,7 +566,7 @@ $(document).ready(function() {
 
       // append all new info
       $("#movieTitle").append(titleText);
-      $("#movieTitle").append(searchAgain);
+      $("#movieTitle").prepend(searchAgain);
       $("#director").append(directorText);
       $("#release").append(releaseText);
       $("#runtime").append(runtimeText);
