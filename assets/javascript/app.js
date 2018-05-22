@@ -207,7 +207,7 @@ $(document).ready(function() {
         var tag = $("<i class='fa fa-search'>");
         searchAgain.append(tag);
         // $("#bookTitle").text('Results');
-        $("#bookTitle").prepend(searchAgain);
+        // $("#bookTitle").prepend(searchAgain);
         $("#book").show();
 
       }else{

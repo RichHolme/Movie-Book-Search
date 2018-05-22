@@ -461,13 +461,15 @@ label{
 
 	#searchAgain{
 		height: 28px;
+		/*margin: 0px;*/
 	}
 
 	#bookTitle i {
     	display:block;
     	text-align:center
 	}
-	/*^for search page^*/
+	
+	/* ^for search page^ */
 
 	#myPoster{
 		margin-left: 45px;
