@@ -510,8 +510,15 @@ label{
 
 	#poll{
 		font-size: 14px;
-		margin-left: 10px !important;
+		margin-left: 3px !important;
 	}
+
+	#noMovie{
+		margin: 0px 100px 0px 0px !important;
+
+	}
+
+    /* ^ your book page ^ */
 
 	#movieInfo{
 

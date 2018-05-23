@@ -623,7 +623,7 @@ $(document).ready(function() {
       // if movie doesnt exist 
 		  }else{
         
-        $("#find").append("<img id='noMovie' src ='assets/images/noVideo.jpg' height = 40px width = 40px>")
+        $("#myPoster").append("<img id='noMovie' src ='assets/images/noVideo.jpg' height = 40px width = 40px>")
    		}
    			
 	  });
