@@ -560,7 +560,7 @@ $(document).ready(function() {
       // append movie poster
       $("#moviePoster").append("<img id=myImg src='" + image +"'>");
 
-      var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
+      var searchAgain = $("<button class='btn btn-default movie' id='searchAgain'>");
       var tag = $("<i class='fa fa-search'>");
       searchAgain.append(tag);
 
