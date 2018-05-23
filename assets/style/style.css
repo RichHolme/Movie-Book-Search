@@ -548,4 +548,8 @@ label{
 	p{
 		margin-left: -15px !important;
 	}
+
+	.card-text{
+		margin-left: 0px !important;
+	}
 }
