@@ -414,7 +414,66 @@ label{
     padding: 1rem
 }
 */
-@media only screen and (max-width: 360px){
+
+@media only screen and (max-width: 769px){
+	#title{
+		font-size: 34px;
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+
+	.titleImg{
+		display: none;
+	}
+
+	.titleThink{
+		display: none;
+	}
+
+	#bookSearch{
+		font-size: 16px;
+		height: 32px;
+	}
+
+	#movieButton {
+    	/*width: 140px;*/
+    	/*padding-left: 10px !important;*/
+    	margin-right: 300px !important;
+    	/*margin-left: 5px !important;*/
+	}
+
+	.book{
+		margin-top: 10px !important;
+	}
+
+	.movie{
+		margin-top: 5px !important;
+	}
+
+	#descriptionMovie{
+		/*margin-right: 100px !important;*/
+		margin-top: 300px;
+		margin-left: -15px !important;
+	}
+
+	p{
+		margin-left: -15px !important;
+	}
+
+	.card-text{
+		margin-left: 0px !important;
+	}
+
+	#noMovie{
+		/*margin-top: 200px !important;*/
+		margin-top: 280px !important;
+		margin-left: -215px !important;
+	}
+}
+
+/*@media only screen and (max-width: 415px){}*/
+
+@media only screen and (max-width: 415px){
 
 	#title{
 		font-size: 24px;
@@ -442,7 +501,7 @@ label{
 	}
 
 	#bookSearch{
-		font-size: 12px;
+		font-size: 14px;
 		height: 28px;
 	}
 
@@ -496,6 +555,7 @@ label{
     	text-align:center;*/
     	width: 140px;
     	padding-left: 10px !important;
+    	margin-right: 90px !important;
     	margin-left: 5px !important;
     	/*font-size: */
     	/*float: left;*/
@@ -514,8 +574,8 @@ label{
 	}
 
 	#noMovie{
-		margin: 0px 100px 0px 0px !important;
-
+		/*margin-top: 200px !important;*/
+		margin-right: 200px !important;
 	}
 
     /* ^ your book page ^ */
@@ -551,5 +611,30 @@ label{
 
 	.card-text{
 		margin-left: 0px !important;
+	}
+	
+	
+}
+
+@media only screen and (max-width: 375px){
+	#descriptionMovie{
+		/*margin-right: 100px !important;*/
+		margin-top: 230px;
+		margin-left: -15px !important;
+	}
+
+	#noMovie{
+		margin: 0px 100px 0px 0px !important;
+
+	}
+
+	#movieButton {
+    	/*display:block;
+    	text-align:center;*/
+    	width: 140px;
+    	padding-left: 10px !important;
+    	margin-left: 5px !important;
+    	/*font-size: */
+    	/*float: left;*/
 	}
 }
