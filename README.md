@@ -10,6 +10,7 @@ Or should I watch the movie:
 
 That is the question!
 
-Search for your book to see if there's a movie. 
-Check out the poll to help you make your read or not to read decision.
-Watch the movie trailer, read the description, and make your decision.
+- Search for your book to see if there's a movie. 
+- Check out the poll to help you make your read or not to read   
+  decision.
+- Watch the movie trailer, read the description, and make your decision.
