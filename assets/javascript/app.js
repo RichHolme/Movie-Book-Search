@@ -339,45 +339,45 @@ $(document).ready(function() {
 
         // for each search I added an if statement to catch a no return
         if(googleBook.items[id].volumeInfo.title == null){
-          var titleText = "TITLE: Unavailable";
+          var titleText = "Title: Unavailable";
         }else{
           var title = googleBook.items[id].volumeInfo.title;
           var titleText = title;
         }
 
         if(googleBook.items[id].volumeInfo.description == null){
-          var descriptionText = "DESCRIPTION: Unavailable";
+          var descriptionText = "Description: Unavailable";
         }else{
           var description = googleBook.items[id].volumeInfo.description;
-          var descriptionText = "DESCRIPTION: " + description;
+          var descriptionText = "Description: " + description;
         }
 
         if(googleBook.items[id].volumeInfo.pageCount == null){
-          var pagesText = "PAGES: Unavailable";
+          var pagesText = "Pages: Unavailable";
         }else{
           var pages = googleBook.items[id].volumeInfo.pageCount;
-          var pagesText = "PAGES: " + pages;
+          var pagesText = "Pages: " + pages;
         }
 
         if(googleBook.items[id].volumeInfo.categories == null){
-          var categoryText = "CATEGORY: Unavailable";
+          var categoryText = "Category: Unavailable";
         }else{
           var category = googleBook.items[id].volumeInfo.categories[0];
-          var categoryText = "CATEGORY: " + category;
+          var categoryText = "Category: " + category;
         }
   				
         if(googleBook.items[id].volumeInfo.authors == null){
-          var authorText = "AUTHOR: Unavailable";
+          var authorText = "Author: Unavailable";
         }else{
           var author = googleBook.items[id].volumeInfo.authors[0];
-          var authorText = "AUTHOR: " + author;
+          var authorText = "Author: " + author;
         }
 
   			if(googleBook.items[id].volumeInfo.publishedDate == null){
-          var publishText = "PUBLISHING DATE: Unavailable";
+          var publishText = "Publishing Date: Unavailable";
         }else{
           var date = googleBook.items[id].volumeInfo.publishedDate;
-          var publishText = "PUBLISHING DATE: " + date;
+          var publishText = "Publishing Date: " + date;
         }
 
   				
@@ -524,32 +524,32 @@ $(document).ready(function() {
 
       // search and store desired info
       var release = response.Released;
-      var releaseText = "RELEASE: " + release;
+      var releaseText = "Release: " + release;
 
       if(response.Title == null){
-        var titleText = 'TITLE UNAVAILABLE'
+        var titleText = 'Title Unavailable'
       }else{
         var title = response.Title;
         var titleText = title;
       }
 
       var description = response.Plot;
-      var descriptionText = "DESCRIPTION: " + description;
+      var descriptionText = "Description: " + description;
 
       var director = response.Director;
-      var directorText = "DIRECTOR: " + director;
+      var directorText = "Director: " + director;
 
       var rating = response.Rated;
-      var ratingText = "RATING: " + rating;
+      var ratingText = "Rating: " + rating;
 
       var runtime = response.Runtime;
-      var runtimeText = "RUNTIME: " + runtime;
+      var runtimeText = "Runtime: " + runtime;
 
       var actors = response.Actors;
-      var actorsText = "ACTORS: " + actors;
+      var actorsText = "Actors: " + actors;
 
       var awards = response.Awards;
-      var awardsText = "AWARDS: " + awards;
+      var awardsText = "Awards: " + awards;
 
       if(response.Poster == null){
         var image = 'assets/images/noImage.jpg';
