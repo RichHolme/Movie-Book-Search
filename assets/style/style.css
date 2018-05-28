@@ -7,6 +7,12 @@
 	box-shadow: 5px 5px 8px 1px #888888;
 }
 
+.readFont{
+	font-family: 'Great Vibes', cursive;
+	font-weight: bold;
+	margin-right: 15px;
+}
+
 .titleImg{
 	margin-top: 20px;
 }
@@ -230,6 +236,10 @@ label{
 }
 
 @media only screen and (max-width: 769px){
+	.readFont{
+		margin-right: 5px;
+	}
+
 	#title{
 		font-size: 34px;
 		padding-top: 15px;
