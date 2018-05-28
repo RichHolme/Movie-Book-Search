@@ -10,7 +10,13 @@
 .readFont{
 	font-family: 'Great Vibes', cursive;
 	font-weight: bold;
-	margin-right: 15px;
+	margin-right: 10px;
+}
+
+.readFont2{
+	font-family: 'Roboto Mono', monospace;
+	/*font-size: 70px;*/
+	font-weight: bold;
 }
 
 .titleImg{
