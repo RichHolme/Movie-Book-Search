@@ -1,18 +1,19 @@
 body{
-	background-color: #f9f7f2 !important;
+	background-color: rgba(178,206,207,.2) !important;
 }
 
 #title{
 	text-align: center;
-	font-size: 60px;
+	font-size: 80px;
 	font-family: 'Poppins', serif;
 	margin-top: 35px;
 	box-shadow: 5px 5px 8px 1px #888888;
-	padding-top: 20px;
-	padding-bottom: 10px;
-	color: #DC5B21;
-	background-color: #E4DBBF;
-	border: 1px solid #598872;
+	padding-top: 10px;
+	/*padding-bottom: 10px;*/
+	color: black;
+	background-color: #efefef;
+	/*background-color: rgba(208,37,82,.9);*/
+	/*border: 1px solid #598872;*/
 	border-radius: 5px;
 }
 
@@ -20,14 +21,14 @@ body{
 	font-family: 'Great Vibes', cursive;
 	font-weight: bold;
 	margin-right: 10px;
-	color: #383127;
+	color: black;
 }
 
 .readFont2{
 	font-family: 'Roboto Mono', monospace;
 	/*font-size: 70px;*/
 	font-weight: bold;
-	color: #383127;
+	color: black;
 }
 
 .titleImg{
@@ -70,7 +71,11 @@ body{
 	padding: 10px !important;
 	margin-top: 20px !important;
 	font-size: 19px;
+	/*background-color: rgba(228,219,191,.5);*/
+	
 }
+
+
 
 #poll{
 	padding: 10px !important;
@@ -98,7 +103,9 @@ body{
 	font-size: 18px;
 }
 
-#search{}
+#search{
+	background-color: #e5e5e5;
+}
 
 #searchBar{}
 
@@ -120,7 +127,7 @@ label{
 	float: left;
 	height: 300px;
 	margin: 24px;
-	border: 1px solid #598872;
+	/*border: 1px solid #598872;*/
 	border-radius: 5px;
 	box-shadow: 5px 10px 8px 3px #888888;
 }
@@ -176,6 +183,7 @@ label{
 	padding-right: 20px !important;
 	padding-left: 20px !important;
 	box-shadow: 3px 3px 8px 1px #888888;
+	background-color: #e5e5e5;
 }
 
 #trailer{
@@ -228,7 +236,7 @@ label{
 	border: 1px solid #70AB8F;
 	border-radius:5px;
 	box-shadow: 3px 3px 8px 1px #888888;
-	background-color: #598872;
+	background-color: #e5e5e5;
 }
 
 .animate{
