@@ -1,5 +1,5 @@
 body{
-	background-color: #f2f2f2 !important;
+	background-color: #f9f7f2 !important;
 }
 
 #title{
@@ -12,7 +12,7 @@ body{
 	padding-bottom: 10px;
 	color: #DC5B21;
 	background-color: #E4DBBF;
-	border: 1px solid #70AB8F;
+	border: 1px solid #598872;
 	border-radius: 5px;
 }
 
@@ -20,12 +20,14 @@ body{
 	font-family: 'Great Vibes', cursive;
 	font-weight: bold;
 	margin-right: 10px;
+	color: #383127;
 }
 
 .readFont2{
 	font-family: 'Roboto Mono', monospace;
 	/*font-size: 70px;*/
 	font-weight: bold;
+	color: #383127;
 }
 
 .titleImg{
@@ -113,11 +115,12 @@ label{
 .card-img-top{
 	padding: 10px;
 }
+
 .card{
 	float: left;
 	height: 300px;
 	margin: 24px;
-	border: 1px solid #70AB8F;
+	border: 1px solid #598872;
 	border-radius: 5px;
 	box-shadow: 5px 10px 8px 3px #888888;
 }
@@ -222,9 +225,10 @@ label{
 	float: right;
 	margin-top: -10px;
 	margin-right: 25px;
-	border: 1px solid lightgrey;
+	border: 1px solid #70AB8F;
 	border-radius:5px;
 	box-shadow: 3px 3px 8px 1px #888888;
+	background-color: #598872;
 }
 
 .animate{
