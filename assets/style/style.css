@@ -1,20 +1,20 @@
 body{
-	background-color: rgba(178,206,207,.2) !important;
+	background-color: #fefefe !important;
 }
 
 #title{
 	text-align: center;
-	font-size: 80px;
+	font-size: 75px;
 	font-family: 'Poppins', serif;
-	margin-top: 35px;
-	box-shadow: 5px 5px 8px 1px #888888;
-	padding-top: 10px;
+	/*margin-top: 35px;*/
+	/*box-shadow: 5px 5px 8px 1px #888888;*/
+	/*padding-top: 10px;*/
 	/*padding-bottom: 10px;*/
 	color: black;
 	background-color: #efefef;
 	/*background-color: rgba(208,37,82,.9);*/
 	/*border: 1px solid #598872;*/
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 }
 
 .readFont{
