@@ -6,15 +6,21 @@ body{
 	text-align: center;
 	font-size: 75px;
 	font-family: 'Poppins', serif;
-	/*margin-top: 35px;*/
-	/*box-shadow: 5px 5px 8px 1px #888888;*/
-	/*padding-top: 10px;*/
-	/*padding-bottom: 10px;*/
 	color: black;
 	background-color: #efefef;
-	/*background-color: rgba(208,37,82,.9);*/
-	/*border: 1px solid #598872;*/
-	/*border-radius: 5px;*/
+}
+
+.simpsons{
+	max-width:100%;
+    max-height:100%;
+}
+
+.jumbotron{
+	box-shadow: 5px 5px 8px 1px #888888;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	/*padding-right: 10px !important;
+	padding-left: 10px !important;*/
 }
 
 .readFont{
@@ -71,11 +77,14 @@ body{
 	padding: 10px !important;
 	margin-top: 20px !important;
 	font-size: 19px;
-	/*background-color: rgba(228,219,191,.5);*/
+	/*background-color: #efefef;*/
 	
 }
 
-
+#bookSearch{
+	font-size: 20px;
+	height: 40px;
+}
 
 #poll{
 	padding: 10px !important;
@@ -104,7 +113,8 @@ body{
 }
 
 #search{
-	background-color: #e5e5e5;
+	background-color: #efefef;
+	height: 40px;
 }
 
 #searchBar{}
@@ -183,7 +193,7 @@ label{
 	padding-right: 20px !important;
 	padding-left: 20px !important;
 	box-shadow: 3px 3px 8px 1px #888888;
-	background-color: #e5e5e5;
+	background-color: #efefef;
 }
 
 #trailer{
@@ -236,7 +246,7 @@ label{
 	border: 1px solid #70AB8F;
 	border-radius:5px;
 	box-shadow: 3px 3px 8px 1px #888888;
-	background-color: #e5e5e5;
+	background-color: #efefef;
 }
 
 .animate{
