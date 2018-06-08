@@ -1,14 +1,7 @@
 $(document).ready(function() {
 
 	// for tmdb
-  // $("#searchAgain").hide();
-	$("#gotMovie, #book, #yourBook, #myBook, #movieButton, #myMovie, #poll").hide();
-	// $("#book").hide();
-	// $("#yourBook").hide();
- //  $("#myBook").hide();
- //  $("#movieButton").hide();
- //  $("#myMovie").hide();
- //  $("#poll").hide();
+  $("#gotMovie, #book, #yourBook, #myBook, #movieButton, #myMovie, #poll").hide();
 
   var config = {
     apiKey: "AIzaSyA6K1EB3z6KS0KuIUaJ_na2IOthkFfq6yw",
@@ -38,8 +31,6 @@ $(document).ready(function() {
   // set url to empty string
 	var yotubeURL = '';
 
-  // fill random search
-  // bookSearch('','dr.seuss')
   function searchAgain(){
     $("#bookTitle").empty();
     $("#searchBox").show();
@@ -48,7 +39,6 @@ $(document).ready(function() {
     // $("#book").hide();
     // $("#myBook").hide();
     // $("#myMovie").hide();
-
   }
 
   var input = document.getElementById("bookSearch");
@@ -78,52 +68,23 @@ $(document).ready(function() {
     // grab book value
 		var book = $("#bookSearch").val().trim();
 
-    // grab autor vlaue
-		// var author = $("#authorSearch").val().trim();
-
-    // replaces first letter of each word in book to uppercase
-		// book = book.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-
     //  empty out search values
 		$("#bookSearch, #authorSearch").val('');
-		// $("#authorSearch").val('');
 
     // hide show for each new search
     $("#myBook, #myMovie").hide();
-    // $("#myMovie").hide();
+  
     $("#bookTitle").show();
 
     // empty out all divs individually for next search
     $("#bookPoster, #myTitle, #myPoster, #find, #author, #category, #publish, #pages, #description, #movieTitle, #moviePoster, #director, #release, #rating, #runtime, #actors, #awards, #descriptionMovie").empty();
-    // $("#myTitle").empty();
-    // $("#myPoster").empty();
 
-    // $("#find").empty();
-    // $("#author").empty();
-    // $("#category").empty();
-    // $("#publish").empty();
-    // $("#pages").empty();
-    // $("#description").empty();
-
-    // $("#movieTitle").empty();
-    // $("#moviePoster").empty();
-    
-    // $("#director").empty();
-    // $("#release").empty();
-    // $("#rating").empty();
-    // $("#runtime").empty();
-    // $("#actors").empty();
-    // $("#awards").empty();
-    // $("#descriptionMovie").empty();
-
-		// console.log(book);
     if(book === ''){
       console.log('no entry');
       $("#bookTitle").text("Please enter a book or author to search.");
       $("#book").show();
     }else{
-      // console.log(book);
-      // console.log('search called');
+ 
       // call bookSearch with book and author
       bookSearch(book, author);
     }
@@ -135,8 +96,6 @@ $(document).ready(function() {
 		$("#bookTitle").prepend(searchAgain);
     // .hide().fadeIn(3000)
     // $("#searchAgain").fadeIn(3000);
-
-    
 	})
 	
   var runs = 0;
@@ -235,37 +194,23 @@ $(document).ready(function() {
             // update each card with seperate id
             $("#0" ).attr('id', i);
 
-            // console.log($("#" + i).attr('id'));
-
           }
 
           // show results
-          // if(runs > 1){
-            // $("#bookTitle").text('We Found Some Books! Click On The One Your Looking For.');
             $("#book").show();
-          // }else{
-            // $("#bookTitle").text('Check out this random search!');
-          // }
-  				
 
   			}
-
       }
 
       // when user clicks result image
   		$("img").on('click', function(event){
   			event.preventDefault();
 
-        // $("#radioPoll")[0].reset();
-
-
         // update count
         count++;
 
         // show poll
         $("#poll").show();  					
-
-  			// console.log($(this).attr('id'));
 
         // find id
   			var id = $(this).attr('id');
@@ -277,22 +222,13 @@ $(document).ready(function() {
           id = id -1;
         }
 
-        // console.log(id);
-
         // select image
         var myImg = googleBook.items[id].volumeInfo.imageLinks.thumbnail;
 
-  			// console.log(myImg);
-
         // show selected image and search info
-  			$("#bookPoster").empty();
-  			$("#bookTitle").hide();
+  			$("#bookPoster, #iframe").empty();
+  			$("#bookTitle, #gotMovie, #book").hide();
 
-				// $("#bookInfo").empty();
-  			$("#iframe").empty();
-				$("#gotMovie").hide(); 
-
-        $("#book").hide();
         $("#myBook").show();
 
         // append clicked image
@@ -380,13 +316,9 @@ $(document).ready(function() {
 
           // if book already in database
           if(snapshot.child(title).exists()){
-                
-            // console.log(titleCount);
 
             // store child name
             title_ref = dataRef.ref(title);
-
-            // console.log(title_ref);
 
             // update poll value
             yesCount = snapshot.child(title).val().yes;
@@ -414,8 +346,6 @@ $(document).ready(function() {
               maybe: 0
             })
           }
-            
-
   			});
 
         // when user clicks yes to poll
@@ -458,13 +388,8 @@ $(document).ready(function() {
             maybe: maybeCount
           })
         })
-
-
-   		});
-   			
-  			
+   		});	
   	});
-
   }
 
   // function for movie info search
@@ -479,10 +404,7 @@ $(document).ready(function() {
       method: "GET"
 
     }).then(function(response) {
-      // $("#movie-view").text(JSON.stringify(response));
-      // console.log('imbdSearch');
-      // console.log(response);
-
+      
       // search and store desired info
       var release = response.Released;
       var releaseText = "Release: " + release;
@@ -536,15 +458,12 @@ $(document).ready(function() {
       $("#awards").append(awardsText);
       $("#descriptionMovie").append(descriptionText);
 
-    });
-      
+    });   
   }
 
   // function to call for movie existence
   function tmbdSearch(title){
 
-  	// console.log('called');
-  	// console.log(title);
   	queryURL = "https://api.themoviedb.org/3/search/movie?api_key=1ebfe01505e78aebefb2f6d3e54a2dd0&query=" + title;
 
     // call to tmbd
@@ -554,7 +473,6 @@ $(document).ready(function() {
    		method: 'GET'
 
 	  }).then(function(response) {
-   	  // console.log(response);
 
       //  if movie found
    		if(response.results.length != 0){
@@ -562,14 +480,11 @@ $(document).ready(function() {
         // grab id of trailer
    		  var key = response.results[0].id;
 
-   		  // console.log(key);
-
         // create when movie found
         var movieButton = $("<button class='btn animate btn-default' id='movieButton'>");
 
         // append button
         movieButton.append('We found a movie!');
-        // $("#movieButton").show();
 
         // append button to screen
         $("#myPoster").append(movieButton);
@@ -585,8 +500,7 @@ $(document).ready(function() {
 		  }else{
         
         $("#myPoster").append("<img id='noMovie' src ='assets/images/noVideo.jpg' height = 40px width = 40px>")
-   		}
-   			
+   		}		
 	  });
   }
 
@@ -602,7 +516,6 @@ $(document).ready(function() {
    		method: 'GET'
 
 		}).then(function(response) {
-   		// console.log(response);
 
       // create id holder
    		var youtubeId = '';
@@ -628,8 +541,6 @@ $(document).ready(function() {
 
 			}).then(function(response) {
 
-				// console.log(response);
-
         // if no trailer
         if(response.items.length == 0){
 
@@ -651,11 +562,6 @@ $(document).ready(function() {
           // append link
           $("#iframe").append(link);
 
-          // console.log(link);
-
-          // $("#iframe").show();
-            
-
         }
 
         // when user clicks movie found button
@@ -667,12 +573,7 @@ $(document).ready(function() {
           $("#myMovie").show();
           
         })
-
 			});
-
 		});
-
-
 	}
-
 });
