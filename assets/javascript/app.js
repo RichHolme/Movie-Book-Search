@@ -43,37 +43,6 @@ $(document).ready(function() {
     count: count
   })
 
-  // array of memes
-  // var memes = ["./assets/images/baby.jpg", "./assets/images/charlotte.jpg", "./assets/images/shakespeare1.jpg", 
-  //             "./assets/images/mockingbird.jpg", "./assets/images/mobydick.jpg", "./assets/images/sideways.jpg", 
-  //             "./assets/images/snowwhite.jpg", "./assets/images/twain.jpg", "./assets/images/bookclub.jpg", 
-  //             "./assets/images/cat.jpg", "./assets/images/lisa.jpg", 
-  //             "./assets/images/man.jpg", "./assets/images/red.jpg"];
-
-  // var count = 0;
-
-  // nextImage();
-
-  // // function to dispaly images
-  // function displayImage(){
-  //   $("#memes").attr('src', memes[count]);
-
-  //   //insert a random generator for count
-  //   count = Math.floor(Math.random() * memes.length);
-  // }
-
-  // // function to update image every 6 seconds 
-  // function nextImage() {
-
-  //   // call displayImage every 6 seconds
-  //   setInterval(displayImage, 6000);
-
-  //   if (count >= memes.length) {
-  //     count = 0;
-           
-  //   }
-  // }
-
   // set url to empty string
 	var yotubeURL = '';
 
@@ -83,10 +52,10 @@ $(document).ready(function() {
     $("#bookTitle").empty();
     $("#searchBox").show();
     $("#searchAgain").hide();
-    $("#infoBody").hide();
-    $("#book").hide();
-    $("#myBook").hide();
-    $("#myMovie").hide();
+    // $("#infoBody").hide();
+    // $("#book").hide();
+    // $("#myBook").hide();
+    // $("#myMovie").hide();
 
   }
 
