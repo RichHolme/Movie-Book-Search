@@ -1,22 +1,14 @@
 $(document).ready(function() {
 
-
-  // $("body").addClass('animated bounce');
-
-  // $("#search").click(function(){
-  //       // $("#search").animate({height: "50px", width:"330px"});
-  //       // $("#search").text("Thank you for Using TRONTR");
-  //   });
-    
 	// for tmdb
   // $("#searchAgain").hide();
-	$("#gotMovie").hide();
-	$("#book").hide();
-	$("#yourBook").hide();
-  $("#myBook").hide();
-  $("#movieButton").hide();
-  $("#myMovie").hide();
-  $("#poll").hide();
+	$("#gotMovie, #book, #yourBook, #myBook, #movieButton, #myMovie, #poll").hide();
+	// $("#book").hide();
+	// $("#yourBook").hide();
+ //  $("#myBook").hide();
+ //  $("#movieButton").hide();
+ //  $("#myMovie").hide();
+ //  $("#poll").hide();
 
   var config = {
     apiKey: "AIzaSyA6K1EB3z6KS0KuIUaJ_na2IOthkFfq6yw",
@@ -93,36 +85,36 @@ $(document).ready(function() {
 		// book = book.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 
     //  empty out search values
-		$("#bookSearch").val('');
-		$("#authorSearch").val('');
+		$("#bookSearch, #authorSearch").val('');
+		// $("#authorSearch").val('');
 
     // hide show for each new search
-    $("#myBook").hide();
-    $("#myMovie").hide();
+    $("#myBook, #myMovie").hide();
+    // $("#myMovie").hide();
     $("#bookTitle").show();
 
     // empty out all divs individually for next search
-    $("#bookPoster").empty();
-    $("#myTitle").empty();
-    $("#myPoster").empty();
+    $("#bookPoster, #myTitle, #myPoster, #find, #author, #category, #publish, #pages, #description, #movieTitle, #moviePoster, #director, #release, #rating, #runtime, #actors, #awards, #descriptionMovie").empty();
+    // $("#myTitle").empty();
+    // $("#myPoster").empty();
 
-    $("#find").empty();
-    $("#author").empty();
-    $("#category").empty();
-    $("#publish").empty();
-    $("#pages").empty();
-    $("#description").empty();
+    // $("#find").empty();
+    // $("#author").empty();
+    // $("#category").empty();
+    // $("#publish").empty();
+    // $("#pages").empty();
+    // $("#description").empty();
 
-    $("#movieTitle").empty();
-    $("#moviePoster").empty();
+    // $("#movieTitle").empty();
+    // $("#moviePoster").empty();
     
-    $("#director").empty();
-    $("#release").empty();
-    $("#rating").empty();
-    $("#runtime").empty();
-    $("#actors").empty();
-    $("#awards").empty();
-    $("#descriptionMovie").empty();
+    // $("#director").empty();
+    // $("#release").empty();
+    // $("#rating").empty();
+    // $("#runtime").empty();
+    // $("#actors").empty();
+    // $("#awards").empty();
+    // $("#descriptionMovie").empty();
 
 		// console.log(book);
     if(book === ''){
