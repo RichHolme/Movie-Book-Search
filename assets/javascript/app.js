@@ -58,6 +58,10 @@ $(document).ready(function() {
   $(document).on('click','#searchAgain', function(event){
     searchAgain();
   });
+
+  // $(document).on('click','#infoBody', function(event){
+  //   $("#searchBox").hide();
+  // });
   // when user clicks search for book
 	$(document).on('click','#search', function(event){
 
