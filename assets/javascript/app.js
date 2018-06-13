@@ -59,9 +59,10 @@ $(document).ready(function() {
     searchAgain();
   });
 
-  // $(document).on('click','#infoBody', function(event){
-  //   $("#searchBox").hide();
-  // });
+  $(document).on('click','#myBook', '#myMovie', function(event){
+    // $("#search").hide();
+    $("#searchBox").hide();
+  });
   // when user clicks search for book
 	$(document).on('click','#search', function(event){
 
