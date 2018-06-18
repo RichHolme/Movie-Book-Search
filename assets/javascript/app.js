@@ -59,9 +59,22 @@ $(document).ready(function() {
     searchAgain();
   });
 
-  $(document).on('click','#myBook', '#myMovie', function(event){
+  $(document).on('click', '#infoBody', function(event){
     // $("#search").hide();
     $("#searchBox").hide();
+    $("#searchAgain").show();
+  });
+
+  $(document).on('click', '#myBook', function(event){
+    // $("#search").hide();
+    $("#searchBox").hide();
+    $("#searchAgain").show();
+  });
+
+  $(document).on('click', '#myMovie', function(event){
+    // $("#search").hide();
+    $("#searchBox").hide();
+    $("#searchAgain").show();
   });
   // when user clicks search for book
 	$(document).on('click','#search', function(event){
@@ -98,7 +111,7 @@ $(document).ready(function() {
     var tag = $("<i class='fa fa-search'>");
     searchAgain.append(tag);
     // $("#bookTitle").text('Results');
-		$("#bookTitle").prepend(searchAgain);
+		$("#searchAgainDiv").prepend(searchAgain);
     // .hide().fadeIn(3000)
     // $("#searchAgain").fadeIn(3000);
 	})
@@ -286,14 +299,14 @@ $(document).ready(function() {
         // show info
         $("#bookInfo").show();
 
-        var searchAgain = $("<button class='book btn btn-default' id='searchAgain'>");
-        var tag = $("<i class='fa fa-search'>")
-        searchAgain.append(tag);
+        // var searchAgain = $("<button class='book btn btn-default' id='searchAgain'>");
+        // var tag = $("<i class='fa fa-search'>")
+        // searchAgain.append(tag);
         // $("#searchAgain").stop(true,true);
 
         // append all info
         $("#myTitle").prepend(titleText);
-        $("#myTitle").append(searchAgain);
+        // $("#myTitle").append(searchAgain);
         $("#author").append(authorText);
         $("#description").append(descriptionText);
         $("#category").append(categoryText);
@@ -448,13 +461,13 @@ $(document).ready(function() {
       // append movie poster
       $("#moviePoster").append("<img id=myImg src='" + image +"'>");
 
-      var searchAgain = $("<button class='btn btn-default movie' id='searchAgain'>");
-      var tag = $("<i class='fa fa-search'>");
-      searchAgain.append(tag);
+      // var searchAgain = $("<button class='btn btn-default movie' id='searchAgain'>");
+      // var tag = $("<i class='fa fa-search'>");
+      // searchAgain.append(tag);
 
       // append all new info
       $("#movieTitle").append(titleText);
-      $("#movieTitle").prepend(searchAgain);
+      // $("#movieTitle").prepend(searchAgain);
       $("#director").append(directorText);
       $("#release").append(releaseText);
       $("#runtime").append(runtimeText);
