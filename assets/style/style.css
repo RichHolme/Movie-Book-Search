@@ -2,8 +2,8 @@ body{
 	background-color: #fefefe !important;
 }
 
-#infoBody, #myBook, #myMovie{
-	margin-top: -20px;
+#infoBody{
+	/*padding-top: -20px;*/
 }
 
 #title{
@@ -50,7 +50,7 @@ body{
 }
 
 #book{
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 }
 
 #gotMovie{
@@ -280,6 +280,11 @@ label{
 }
 
 @media only screen and (max-width: 769px){
+	#searchAgain{
+		margin-top: -10px;
+		margin-bottom: -20px;
+	}
+
 	.readFont{
 		margin-right: 5px;
 	}
@@ -335,6 +340,11 @@ label{
 }
 
 @media only screen and (max-width: 415px){
+	
+	#searchAgain{
+		margin-top: -10px;
+		margin-bottom: -20px;
+	}
 
 	#title{
 		font-size: 24px;
@@ -380,6 +390,8 @@ label{
 
 	#searchAgain{
 		height: 28px;
+		padding-top: 3px;
+	
 	}
 
 	#bookTitle i {
@@ -468,6 +480,15 @@ label{
 }
 
 @media only screen and (max-width: 375px){
+	#searchAgain{
+		margin-top: -10px;
+		margin-bottom: -20px;
+	}
+
+	#searchAgain{
+		padding-top: 3px;
+	}
+
 	#descriptionMovie{
 		margin-top: 230px;
 		margin-left: -15px !important;
