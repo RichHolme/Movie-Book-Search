@@ -31,6 +31,8 @@ $(document).ready(function() {
   // set url to empty string
 	var yotubeURL = '';
 
+  var prevSearch = '';
+
   function searchAgain(){
     $("#bookTitle").empty();
     $("#searchBox").show();
@@ -79,12 +81,14 @@ $(document).ready(function() {
   // when user clicks search for book
 	$(document).on('click','#search', function(event){
 
-		event.preventDefault();
+    event.preventDefault();
 
     $("#infoBody").show();
     $("#searchBox").hide();
     // grab book value
 		var book = $("#bookSearch").val().trim();
+
+    prevSearch = book;
 
     //  empty out search values
 		$("#bookSearch, #authorSearch").val('');
@@ -104,22 +108,50 @@ $(document).ready(function() {
     }else{
  
       // call bookSearch with book and author
-      bookSearch(book, author);
+      bookSearch(book);
     }
     
     var searchAgain = $("<button class='btn animate btn-default' id='searchAgain'>");
     var tag = $("<i class='fa fa-search'>");
     searchAgain.append(tag);
+    // var prevSearch = $("<button class='btn animate btn-default' id='prevSearch'>");
     // $("#bookTitle").text('Results');
 		$("#searchAgainDiv").prepend(searchAgain);
+    // $("#searchAgainDiv").prepend(prevSearch);
     // .hide().fadeIn(3000)
     // $("#searchAgain").fadeIn(3000);
 	})
 	
   var runs = 0;
 
+  // =========================================================================================================
+  // previous search 
+
+  $(document).on('click','#prevSearch', function(event){
+
+    event.preventDefault();
+
+    $("#infoBody").show();
+    $("#searchBox").hide();
+
+    // hide show for each new search
+    $("#myBook, #myMovie").hide();
+  
+    $("#bookTitle").show();
+
+    // empty out all divs individually for next search
+    $("#bookPoster, #myTitle, #myPoster, #find, #author, #category, #publish, #pages, #description, #movieTitle, #moviePoster, #director, #release, #rating, #runtime, #actors, #awards, #descriptionMovie").empty();
+
+    bookSearch(prevSearch);
+
+  })
+  
+// =========================================================================================================
+
   // function to search for book by title and author
-	function bookSearch(book, author){
+	function bookSearch(book){
+
+    $("#prevSearch").hide();
 
 		var authKey = "AIzaSyD3t9FZQ_rFOQdwV_b3PVvH6FEWSNJjRck";
 
@@ -144,8 +176,9 @@ $(document).ready(function() {
         var searchAgain = $("<button class='btn animate btn-default' id='searchAgain'>");
         var tag = $("<i class='fa fa-search'>");
         searchAgain.append(tag);
-        // $("#bookTitle").text('Results');
-        // $("#bookTitle").prepend(searchAgain);
+      
+        var prevSearch = $("<button class='btn animate btn-default' id='prevSearch'>");
+
         $("#book").show();
 
       }else{
@@ -223,6 +256,14 @@ $(document).ready(function() {
       // when user clicks result image
   		$("img").on('click', function(event){
   			event.preventDefault();
+
+        var prevSearch = $("<button class='btn animate btn-default' id='prevSearch'>");
+        // $("#bookTitle").text('Results');
+        // $("#searchAgainDiv").prepend(searchAgain);
+        var tag = $("<i class='fa fa-arrow-left'>");
+        prevSearch.append(tag);
+
+        $("#searchAgainDiv").prepend(prevSearch);
 
         // update count
         count++;

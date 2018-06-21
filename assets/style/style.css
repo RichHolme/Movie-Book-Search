@@ -254,6 +254,17 @@ label{
 	height: 40px;
 }
 
+#prevSearch{
+	float: left;
+	/*margin-top: 20px;*/
+	margin-left: 25px;
+	border: 1px solid #70AB8F;
+	border-radius:5px;
+	box-shadow: 3px 3px 8px 1px #888888;
+	background-color: #efefef;
+	height: 40px;
+}
+
 .animate{
 	animation-name: flash;
 	animation-duration: 2s;
@@ -273,6 +284,10 @@ label{
 
 #searchAgain:hover:before{
 	content: "Search Again  "
+}
+
+#prevSearch:hover:after{
+	content: "  Previous Search"
 }
 
 #links{
