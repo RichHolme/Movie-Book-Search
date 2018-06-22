@@ -517,20 +517,26 @@ label{
 		/*margin-right: 0px !important;*/
 	}
 
-	#picFind{
-		padding-left: 80px;
-	}
-
-	img < #noMovie{
-		
-		margin-right: 0px !important;
-		
+	#myPoster{
+		/*padding-left: 80px;*/
+		text-align: center;
 	}
 
 	#myBook{
 		/*padding-left: 25px;*/
 		text-align: center !important;
 	}
+
+	#myPoster{
+		/*margin-left: 58px;*/
+	}
+	#picFind{
+		text-align: center;
+	}
+/*	 
+	#find{
+		margin-right: 300px !important;
+	}*/
 
 	#searchAgain{
 		margin-top: -10px;
@@ -556,7 +562,8 @@ label{
 	}
 
 	#noMovie{
-		margin: 0px 100px 0px 0px !important;
+		/*margin: 0px 160px 0px 0px !important;*/
+		text-align: center !important;
 
 	}
 
