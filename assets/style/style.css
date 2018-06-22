@@ -300,6 +300,11 @@ label{
 		margin-bottom: -20px;
 	}
 
+	#prevSearch{
+		margin-top: -10px;
+		/*margin-bottom: -20px;*/
+	}
+
 	.readFont{
 		margin-right: 5px;
 	}
@@ -361,6 +366,11 @@ label{
 		margin-bottom: -20px;
 	}
 
+	#prevSearch{
+		margin-top: -10px;
+		/*margin-bottom: -20px;*/
+	}
+
 	#title{
 		font-size: 24px;
 		padding-top: 15px;
@@ -378,6 +388,7 @@ label{
 		width: 110px !important;
 		height: 200px;
 		overflow-y: scroll;
+		margin-left: 40px;
 	}
 
 	.bookImage{
@@ -404,6 +415,12 @@ label{
 	}
 
 	#searchAgain{
+		height: 28px;
+		padding-top: 3px;
+	
+	}
+
+	#prevSearch{
 		height: 28px;
 		padding-top: 3px;
 	
@@ -494,13 +511,42 @@ label{
 	
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 376px){
+	.card{
+		margin-left: 30px !important;
+		/*margin-right: 0px !important;*/
+	}
+
+	#picFind{
+		padding-left: 80px;
+	}
+
+	img < #noMovie{
+		
+		margin-right: 0px !important;
+		
+	}
+
+	#myBook{
+		/*padding-left: 25px;*/
+		text-align: center !important;
+	}
+
 	#searchAgain{
 		margin-top: -10px;
 		margin-bottom: -20px;
 	}
 
+	#prevSearch{
+		margin-top: -10px;
+		/*margin-bottom: -20px;*/
+	}
+
 	#searchAgain{
+		padding-top: 3px;
+	}
+
+	#prevSearch{
 		padding-top: 3px;
 	}
 
@@ -518,5 +564,27 @@ label{
     	width: 140px;
     	padding-left: 10px !important;
     	margin-left: 5px !important;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.card{
+		width: 90px !important;
+		height: 170px;
+		/*overflow-y: scroll;*/
+		margin-left: 25px !important;
+	}
+
+	.bookImage{
+		height: 120px;
+		width: 90px;
+	}
+
+	#picFind{
+		padding-left: 58px;
+	}
+
+	#noMovie{
+		margin-left: 20px !important;
 	}
 }
