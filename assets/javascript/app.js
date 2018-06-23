@@ -140,7 +140,7 @@ $(document).ready(function() {
     $("#bookTitle").show();
 
     // empty out all divs individually for next search
-    $("#bookPoster, #myTitle, #myPoster, #find, #author, #category, #publish, #pages, #description, #movieTitle, #moviePoster, #director, #release, #rating, #runtime, #actors, #awards, #descriptionMovie").empty();
+    $("#bookPoster, #myTitle, #myPoster, #find, #author, #category, #publish, #pages, #description, #movieTitle, #moviePoster, #director, #release, #rating, #runtime, #actors, #awards, #descriptionMovie, #film").empty();
 
     bookSearch(prevSearch);
 
@@ -302,38 +302,38 @@ $(document).ready(function() {
         }
 
         if(googleBook.items[id].volumeInfo.description == null){
-          var descriptionText = "Description: Unavailable";
+          var descriptionText = "  Description: Unavailable";
         }else{
           var description = googleBook.items[id].volumeInfo.description;
-          var descriptionText = "Description: " + description;
+          var descriptionText = "  Description: " + description;
         }
 
         if(googleBook.items[id].volumeInfo.pageCount == null){
-          var pagesText = "Pages: Unavailable";
+          var pagesText = "  Pages: Unavailable";
         }else{
           var pages = googleBook.items[id].volumeInfo.pageCount;
-          var pagesText = "Pages: " + pages;
+          var pagesText = "  Pages: " + pages;
         }
 
         if(googleBook.items[id].volumeInfo.categories == null){
-          var categoryText = "Category: Unavailable";
+          var categoryText = "  Category: Unavailable";
         }else{
           var category = googleBook.items[id].volumeInfo.categories[0];
-          var categoryText = "Category: " + category;
+          var categoryText = "  Category: " + category;
         }
   				
         if(googleBook.items[id].volumeInfo.authors == null){
-          var authorText = "Author: Unavailable";
+          var authorText = "  Author: Unavailable";
         }else{
           var author = googleBook.items[id].volumeInfo.authors[0];
-          var authorText = "Author: " + author;
+          var authorText = "  Author: " + author;
         }
 
   			if(googleBook.items[id].volumeInfo.publishedDate == null){
-          var publishText = "Publishing Date: Unavailable";
+          var publishText = "  Publishing Date: Unavailable";
         }else{
           var date = googleBook.items[id].volumeInfo.publishedDate;
-          var publishText = "Publishing Date: " + date;
+          var publishText = "  Publishing Date: " + date;
         }
 
   				
@@ -348,11 +348,11 @@ $(document).ready(function() {
         // append all info
         $("#myTitle").prepend(titleText);
         // $("#myTitle").append(searchAgain);
-        $("#author").append(authorText);
-        $("#description").append(descriptionText);
-        $("#category").append(categoryText);
-        $("#publish").append(publishText);
-        $("#pages").append(pagesText);
+        $("#author").append("<span class='fa fa-pencil'></span>" + authorText);
+        $("#description").append("<span class='fa fa-bars'></span>" + descriptionText);
+        $("#category").append("<span class='fa fa-folder-o'></span>" + categoryText);
+        $("#publish").append("<span class='fa fa-calendar'></span>" + publishText);
+        $("#pages").append("<span class='fa fa-file-text-o'></span>" + pagesText);
 
         // $("#bookInfo").append($("#title"));
         // call movie search
@@ -554,11 +554,12 @@ $(document).ready(function() {
 
         // call tmbd 2nd time for trailer
  			  findTrailer(key);
+        $("#film").append("<span class='fa fa-video-camera'></span> Film: <span class='fa fa-check'></span>")
 
       // if movie doesnt exist 
 		  }else{
         
-        $("#myPoster").append("<img id='noMovie' src ='assets/images/noVideo.jpg' height = 40px width = 40px>")
+        $("#film").append("<span class='fa fa-video-camera'></span> Film: We couldn't find a film")
    		}		
 	  });
   }

@@ -59,6 +59,21 @@ body{
 
 #bookInfo{
 	margin-top: 30px;
+	/*box-shadow: 5px 5px 8px 1px #888888;
+	padding-top: 10px;
+	background-color: #efefef;
+	border-radius: 5px;*/
+}
+
+#myBook{
+	/*box-shadow: 1px 3px 8px 1px #888888;*/
+	padding: 15px;
+	/*background-color: #efefef;*/
+	/*border-radius: 5px;*/
+	/*font-weight: bold;*/
+	line-height: 28px;
+	margin-bottom: 10px;
+	/*border: solid 2px black;*/
 }
 
 .bookImage{
@@ -73,6 +88,7 @@ body{
 
 #movieTitle{
 	font-size: 27px;
+	/*font-weight: bold;*/
 	padding-bottom: 15px;
 }
 
@@ -143,7 +159,8 @@ label{
 	margin: 24px;
 	/*border: 1px solid #598872;*/
 	border-radius: 5px;
-	box-shadow: 5px 10px 8px 3px #888888;
+	/*box-shadow: 5px 10px 8px 3px #888888;*/
+	box-shadow: 5px 5px 8px 1px #888888;
 }
 
 #bookPoster{
@@ -154,13 +171,16 @@ label{
 	float: left;
 	height: 280px;
 	width: 215px;
-	box-shadow: 5px 10px 8px 3px #888888;
+	/*box-shadow: 5px 10px 8px 3px #888888;*/
+	box-shadow: 5px 5px 8px 1px #888888;
 }
 
 #myTitle{
 	font-size: 27px;
 	margin-top: 10px;
 	padding-bottom: 15px;
+	text-align: center;
+	font-weight: bold;
 }
 
 #author, #category, #publish, #pages, #description {}
@@ -294,7 +314,16 @@ label{
 	background-color: lightgrey;
 }
 
+#noMovie{
+	/*box-shadow: 5px 10px 8px 3px #888888 !important;*/
+	box-shadow: 5px 5px 8px 1px #888888 !important;
+}
+
 @media only screen and (max-width: 769px){
+	#bookInfo{
+		/*margin-left: -20px;*/
+	}
+
 	#searchAgain{
 		margin-top: -10px;
 		margin-bottom: -20px;
@@ -330,6 +359,7 @@ label{
 
 	#movieButton {
     	margin-right: 300px !important;
+
 	}
 
 	.book{
@@ -360,7 +390,27 @@ label{
 }
 
 @media only screen and (max-width: 415px){
+
+	#author{
+		/*margin-top: 20px;*/
+		clear: both;
+	}
 	
+	#myBook{
+		/*padding-left: 25px;*/
+		text-align: center !important;
+	}
+	
+	#picFind{
+		padding-left: 25%
+	}
+
+	#noMovie{
+		/*margin: 0px !important;*/
+		margin-top: 200px !important;
+		margin-right: 140px !important;
+	}
+
 	#searchAgain{
 		margin-top: -10px;
 		margin-bottom: -20px;
@@ -436,6 +486,7 @@ label{
 	#myImg{
 		height: 200px;
 		width: 150px;
+		margin-bottom: 20px;
 	}
 	
 	#myTitle i {
@@ -456,8 +507,10 @@ label{
 	#movieButton {
     	width: 140px;
     	padding-left: 10px !important;
-    	margin-right: 90px !important;
+    	margin-right: 105px !important;
     	margin-left: 5px !important;
+    	margin-bottom: 0px !important;
+    	margin-top: -15px !important;
 	}
 
 	#bookInfo{
@@ -470,9 +523,9 @@ label{
 		margin-left: 3px !important;
 	}
 
-	#noMovie{
+	/*#noMovie{
 		margin-right: 200px !important;
-	}
+	}*/
 
     /* ^ your book page ^ */
 
@@ -517,26 +570,30 @@ label{
 		/*margin-right: 0px !important;*/
 	}
 
-	#myPoster{
-		/*padding-left: 80px;*/
-		text-align: center;
-	}
-
 	#myBook{
 		/*padding-left: 25px;*/
 		text-align: center !important;
 	}
 
-	#myPoster{
-		/*margin-left: 58px;*/
+	#myMovie{
+		/*padding-left: 25px;*/
+		text-align: center !important;
 	}
+	
+	#moviePoster{
+		padding-left: 25%;
+	}
+
 	#picFind{
-		text-align: center;
+		padding-left: 25%;
 	}
-/*	 
-	#find{
-		margin-right: 300px !important;
-	}*/
+
+	#noMovie{
+		/*margin: 0px !important;*/
+		/*margin-top: 100px !important;*/
+		margin-right: 110px !important;
+		/*margin-right: 0px !important;*/
+	}
 
 	#searchAgain{
 		margin-top: -10px;
@@ -592,6 +649,8 @@ label{
 	}
 
 	#noMovie{
-		margin-left: 20px !important;
+		/*margin-right: 110px !important;*/
+		/*margin-left: 5px !important;*/
+		margin-right: 80px !important;
 	}
 }
