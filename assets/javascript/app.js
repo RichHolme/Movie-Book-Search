@@ -111,7 +111,7 @@ $(document).ready(function() {
       bookSearch(book);
     }
     
-    var searchAgain = $("<button class='btn animate btn-default' id='searchAgain'>");
+    var searchAgain = $("<button class='btn btn-default' id='searchAgain'>");
     var tag = $("<i class='fa fa-search'>");
     searchAgain.append(tag);
     // var prevSearch = $("<button class='btn animate btn-default' id='prevSearch'>");
@@ -177,7 +177,7 @@ $(document).ready(function() {
         var tag = $("<i class='fa fa-search'>");
         searchAgain.append(tag);
       
-        var prevSearch = $("<button class='btn animate btn-default' id='prevSearch'>");
+        var prevSearch = $("<button class='btn btn-default' id='prevSearch'>");
 
         $("#book").show();
 
@@ -509,13 +509,13 @@ $(document).ready(function() {
       // append all new info
       $("#movieTitle").append(titleText);
       // $("#movieTitle").prepend(searchAgain);
-      $("#director").append(directorText);
-      $("#release").append(releaseText);
-      $("#runtime").append(runtimeText);
-      $("#rating").append(ratingText);
-      $("#actors").append(actorsText);
-      $("#awards").append(awardsText);
-      $("#descriptionMovie").append(descriptionText);
+      $("#director").append("<span class='fa fa-bullhorn movieIcon'></span>" +directorText);
+      $("#release").append("<span class='fa fa-calendar movieIcon'></span>" +releaseText);
+      $("#runtime").append("<span class='fa fa-clock-o movieIcon'></span>" +runtimeText);
+      $("#rating").append("<span class='fa fa-star movieIcon'></span>" +ratingText);
+      $("#actors").append("<span class='fa fa-users movieIcon'></span>" +actorsText);
+      $("#awards").append("<span class='fa fa-trophy movieIcon'></span>" +awardsText);
+      $("#descriptionMovie").append("<span class='fa fa-file-text-o movieIcon'></span>" +descriptionText);
 
     });   
   }
@@ -540,10 +540,10 @@ $(document).ready(function() {
    		  var key = response.results[0].id;
 
         // create when movie found
-        var movieButton = $("<button class='btn animate btn-default' id='movieButton'>");
+        var movieButton = $("<button class='btn btn-default' id='movieButton'>");
 
         // append button
-        movieButton.append('We found a movie!');
+        movieButton.append('See your movie!');
 
         // append button to screen
         $("#myPoster").append(movieButton);
