@@ -17,6 +17,7 @@
 ### Skill Highlight
 
 - jQuery
+- AJAX
 - Bootstrap
 - Firebase
 
