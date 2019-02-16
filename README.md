@@ -14,7 +14,7 @@
 
 <img src="https://media.giphy.com/media/3orif1s0OHZf7yKk6I/giphy.gif" width="200" height="150" />
 
-### Skill Highlight
+### Core Technology
 
 - jQuery
 - AJAX
